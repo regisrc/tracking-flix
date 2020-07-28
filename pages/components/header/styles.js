@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+const Build = styled.div``;
+
+export default Build;
+
 export const Container = styled.div`
   display: flex;
   align-items: center;

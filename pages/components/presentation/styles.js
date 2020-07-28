@@ -1,11 +1,18 @@
 import styled from "styled-components";
-import { lighten } from "polished";
+import { lighten, darken } from "polished";
+
+const Build = styled.div``;
+
+export default Build;
 
 export const Container = styled.div`
   display: flex;
   align-items: center;
 
-  background-color: ${lighten(0.9, "#000")};
+  background-color: ${(props) =>
+    props.theme.title === "light"
+      ? lighten(0.9, props.theme.color.secondary)
+      : darken(0.9, props.theme.color.secondary)};
   border-radius: 5px;
 `;
 
@@ -24,7 +31,7 @@ export const Content = styled.div`
 export const Text = styled.p`
   font-size: 20px;
   font-weight: normal;
-  color: #000;
+  color: ${(props) => props.theme.color.secondary};
 `;
 
 export const LinkContainer = styled.div`

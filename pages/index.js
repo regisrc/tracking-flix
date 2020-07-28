@@ -3,7 +3,6 @@ import fetch from "isomorphic-unfetch";
 import { Container, CardContainer } from "../styles/index/styles";
 import Presentation from "./components/presentation/index";
 import Card from "./components/card/index";
-import Link from "next";
 
 const Home = ({ objeto }) => {
   console.log(objeto);
@@ -14,7 +13,7 @@ const Home = ({ objeto }) => {
       {objeto && (
         <CardContainer>
           {objeto.map((obt, index) => (
-            <Card props={obt} />
+            <Card key={index} props={obt} />
           ))}
         </CardContainer>
       )}

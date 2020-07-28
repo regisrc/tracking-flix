@@ -9,6 +9,6 @@ export default createGlobalStyle`
     }
 
     body{
-        background-color: #fafafa;
+        background-color: ${(props) => props.theme.color.primary};
     }
 `;
