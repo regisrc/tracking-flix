@@ -1,3 +1,6 @@
+<h1>Deployed Link</h1>
+<h1>https://tracking-flix.vercel.app</h1>
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
